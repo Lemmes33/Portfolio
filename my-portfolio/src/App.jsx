@@ -9,25 +9,24 @@ import Contact from "./Components/Sections/Contact/Contact"
 
 function App() {
   return (
-   <>
-   {/* <Home /> */}
-   <Navbar />
-   <Sidebar />
-   <div style={{ height: 'calc(100vh - 64px)', overflowY: 'scroll' }}>
-  <section>
-    <Home />
-  </section>
-  <section>
-    <Project />
-  </section>
-  <section>
-    <About />
-  </section>
-  <section>
-    <Contact />
-  </section>
-</div>
-</>
+    <>
+      <Navbar />
+      <Sidebar />
+      <div className="scroll-container">
+        <section className="section" style={{ backgroundColor: '#f0f0f0' }}>
+          <Home />
+        </section>
+        <section className="section" style={{ backgroundColor: '#e0e0e0' }}>
+          <Project />
+        </section>
+        <section className="section" style={{ backgroundColor: '#d0d0d0' }}>
+          <About />
+        </section>
+        <section className="section" style={{ backgroundColor: '#c0c0c0' }}>
+          <Contact />
+        </section>
+      </div>
+    </>
   );
 }
 
